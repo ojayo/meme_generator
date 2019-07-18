@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Meme Maker, by Jay Osborne</title>
+    <meta charset="utf-8">
+    <!-- 1. Setup the document in the <head>, linking CSS file and Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- 2. A container per Bootstrap conventions, but focus on mobile later -->
+    <main class="container"><!-- or container-fluid? -->
+      <!-- 3. A form for the user to input data. Provide IDs and button -->
+      <div class="form-container"> <!-- goes to formBox -->
+        <h1>My Meme Maker</h1>
+        <form>
+          Image URL <input type="text" class="form-control" id="imageLink" value="http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg" placeholder="Paste the link to the image here." required />
+          Upper Text <input type="text" class="form-control" id="upperText" value="" placeholder="Optional: Write the top line." />
+          Lower Text <input type="text" class="form-control" id="lowerText" value="" placeholder="Optional: Write the bottom line." />
+          <button type="submit" class="btn btn-warning text-center mt-2" id="btn" name="button">Generate Meme</button>
+        </form>
+      </div>
+      <!-- 4. Create a div for the image to be placed within -->
+      <div class="imageBox d-flex flex-wrap">
+       <div class="imageBoxScroll d-flex flex-wrap justify-content-center"></div>
+        
+      </div>
+ 
+    </main>
+    
+  <script src="script.js"></script>
+  </body>
+</html>
+        
+        
+      

@@ -1,0 +1,74 @@
+body {
+  font-family: 'Avenir', sans-serif;
+  letter-spacing: 1px;
+  /*background-image: url(https://archive-media-1.nyafuu.org/wg/image/1382/72/1382723579733.jpg); */
+}
+
+h1 {
+  color: white;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meme {
+  position: relative;
+  margin: 30px 30px 0px 0px;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.meme span { /* text on meme */
+  position: absolute;
+  left: 0;
+  right: 0; /*
+  margin: 10px 0;
+  padding: 0 10px;
+  z-index: 5; */
+  color: #fff;
+  font-family: Impact, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: #000 0px 0px 10px;
+}
+
+.meme .upperText {
+  top: 0;
+}
+
+.meme .lowerText {
+  bottom: 0;
+}
+
+.meme img {
+  max-width: 100%;
+  /*height: auto;*/
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+  border-radius: 20px;
+  border: 1px solid yellow;
+  transition: all .5s ease-in-out;
+}
+
+button {
+  box-shadow: 3px 2px 2px lightgray;
+  box-shadow: inset 1px 2px 2px 1px white;
+  text-shadow: 1px 1px yellow;
+}
+
+button::click {
+  
+}
+
+.imageBoxScroll {
+  margin: 0 auto;
+}
+
